@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>GR_Studio</title>
+    <meta name="title" content="GR_Studio">
+    <link rel="icon" type="image/png" href="media/favicon.png" />
+    <!-- Metadatos Genéricos -->
+    <meta name="description" content="¿Tienes una idea? ¿Quieres expresarla y transformarla en proyecto? Estás en el sitio indicado.">
+    <meta name="image" content="https://66.media.tumblr.com/348771a545bbcd2981357efcb64e4b46/tumblr_pqjt9nv1ht1r21dvso1_250.png">
+    <!-- Metadatos para Schema.org for Google -->
+    <meta itemprop="name" content="GR_Studio">
+    <meta itemprop="description" content="¿Tienes una idea? ¿Quieres expresarla y transformarla en proyecto? Estás en el sitio indicado.">
+    <meta itemprop="image" content="https://66.media.tumblr.com/348771a545bbcd2981357efcb64e4b46/tumblr_pqjt9nv1ht1r21dvso1_250.png">
+    <!-- Metadatos para Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="GR_Studio">
+    <meta name="twitter:description" content="¿Tienes una idea? ¿Quieres expresarla y transformarla en proyecto? Estás en el sitio indicado.">
+    <meta name="twitter:image" content="https://66.media.tumblr.com/348771a545bbcd2981357efcb64e4b46/tumblr_pqjt9nv1ht1r21dvso1_250.png">
+    <!-- Metadatos para Open Graph general (Facebook y Pinterest) -->
+    <meta name="og:title" content="GR_Studio">
+    <meta name="og:description" content="¿Tienes una idea? ¿Quieres expresarla y transformarla en proyecto? Estás en el sitio indicado.">
+    <meta name="og:image" content="https://66.media.tumblr.com/348771a545bbcd2981357efcb64e4b46/tumblr_pqjt9nv1ht1r21dvso1_250.pngx">
+    <meta name="og:locale" content="es_CL">
+    <meta name="og:type" content="website">
+    <!-- Ahora vinculamos el estilo -->
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+</head>
+
+<body>
+    <div id="contenido">
+        <header>
+            <h1>*G y R*</h1>
+            <h2>*Diseño Gráfico, Audiovidual y CAD*</h2>
+        </header>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="media/video-01.mp4" type="video/mp4">
+        </video>
+
+        <h3>QUIENES SOMOS</h3>
+        <div id="somos">
+
+            <div class="dupla primera">
+                <h4>JOAQUÍN GAJARDO</h4>
+                <h5>Antes dibujaba a  palitos, ahora lo hago en VR</h5>
+                <h6> 23 años, creo.</h6>
+                <p>Estudié en el Colegio santo domingo. Actualmente estoy estudiando Diseño en la Universidad Católica. Pretendo crear mi propio estudio de diseño independiente, el cual abarque desde diseño paramétrico hasta gráfico.</p>
+                <address><a href="mailto:jdgajardo@uc.cl">jdgajardo@uc.cl</a></address>
+            </div>
+
+            <div class="dupla segunda">
+                <h4>TOMÁS ROBERTSON</h4>
+                <h5>El peluca de los comerciales, también diseña!</h5>
+                <h6> 21 años y contando.</h6>
+                <p>Estudié en el Colegio Verbo Divino, entré directamente a Diseño en la Universidad Católica, siempre con la idea de hacer diseño industrial. Ahora me dedico a modelar en 3d, hacer renders, mappings y al diseño CAD parametrizado.</p>
+                <address><a href="mailto:tarobertson@uc.cl">tarobertson@uc.cl</a></address>
+            </div>
+
+            <hr />
+        </div><!-- acá cerramos el div id="somos"-->
+
+        <h3>PORTAFOLIO</h3>
+
+        <div id="portafolio">
+
+            <!--acá se colocan y organizan las cosas con programación-->
+
+        </div><!-- acá cerramos el div id="portafolio"-->
+
+        <footer>
+            <p>*G y R · Web diseñada con
+              <img src="media/favicon.png" style= "display: inline; max-height: 20px"
+              <span>  · 2019</p>
+        </footer>
+
+    </div><!-- acá abajo cerramos el div id="contenido"-->
+
+    <!-- Lo que sigue SI es PROGRAMACIÓN -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script>
+        // ESTO SIRVE PARA ARREGLAR CADA ÍTEM DEL PORTAFOLIO COMO ALBAÑILERÍA (MASONRY)
+        window.onload = function() {
+            var container = document.querySelector('#portafolio');
+            var msnry = new Masonry(portafolio, {
+                itemSelector: '.item'
+            });
+        };
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="portafolio.js"></script>
+</body>
+
+</html>
